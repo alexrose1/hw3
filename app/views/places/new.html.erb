@@ -1,0 +1,17 @@
+<%= form_with :model => @place do |form| %>
+  <p>
+    <%= form.label "Location" %>
+    <%= form.text_field "title" %>
+  </p>
+  <p>
+    <%= form.label "Description" %>
+    <%= form.text_area "description" %>
+    <%= form.label "Date of Post" %>
+    <%= form.date_select "posted_on" %>
+  </p>
+  <%= form.submit %>
+<% end %>
+
+<p>
+<a href="/places/"> Go back to Places main page </a>
+</p>

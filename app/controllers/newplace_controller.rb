@@ -1,0 +1,2 @@
+class NewplaceController < ApplicationController
+end
