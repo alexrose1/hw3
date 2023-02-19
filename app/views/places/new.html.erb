@@ -1,14 +1,12 @@
+  <h1>   List a new place </h1>
 <%= form_with :model => @place do |form| %>
+
+  
   <p>
-    <%= form.label "Location" %>
-    <%= form.text_field "title" %>
+    <%= form.label "Name of Location" %>
+    <%= form.text_field "name" %>
   </p>
-  <p>
-    <%= form.label "Description" %>
-    <%= form.text_area "description" %>
-    <%= form.label "Date of Post" %>
-    <%= form.date_select "posted_on" %>
-  </p>
+  
   <%= form.submit %>
 <% end %>
 

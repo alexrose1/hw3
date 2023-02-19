@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # get("/", { :controller => "articles", :action => "index" })
   resources "places"
-  resources "newplace"
+  resources "posts"
+
 end

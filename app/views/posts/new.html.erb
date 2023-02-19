@@ -1,0 +1,22 @@
+
+<%= form_with :model => @post do |form| %>
+  
+  <h1>   Create a new post </h1>
+  
+  <p>
+    <%= form.label "Title of post" %>
+    <%= form.text_field "title" %>
+  </p>
+  <p>
+    <%= form.label "Description" %>
+    <%= form.text_area "description" %>
+    <%= form.label "Date of Post" %>
+    <%= form.date_field "posted_on" %>
+  </p>
+    <%= form.hidden_field "company_id" %>
+  <%= form.submit %>
+<% end %>
+
+<p>
+<a href="/places/"> Go back to Places main page </a>
+</p>
