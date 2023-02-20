@@ -7,13 +7,13 @@ class PlacesController < ApplicationController
 
     def new
         @place = Place.new
-        @place_post = Post.new
+        
 
     end
 
     def show
         @place = Place.find_by({"id" => params["id"]})
-        @place_post = Post.find_by({"place_id" => @place["id"]})
+        @posts = Post.where({"place_id" => @place["id"]})
     end
 
     def create
